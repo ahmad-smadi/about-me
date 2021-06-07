@@ -1,0 +1,40 @@
+body {
+    background-color: #ffed99;
+}
+
+header img {
+    width: 100px;
+}
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    float: right;
+    padding: 12px;
+    margin: 12px;
+}
+
+main img {
+    width: 100%;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+main p {
+    text-indent: 30px;
+    line-height: 1.5;
+}
+
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
