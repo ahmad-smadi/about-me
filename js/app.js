@@ -47,3 +47,6 @@ let userName = prompt('waht is your name');
  } else if (mansaf === 'no' || 'n'){
      alert('think again');
  } else ('please choose your answer between yes, y , no and n');
+
+
+ alert(`thanks back again ${userName}`)
