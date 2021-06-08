@@ -89,18 +89,18 @@ correctAnswer++;
 
 alert (`your scored ${correctAnswer} out of 7`);
 
-
+alert('i have a game for you chose number between 0 and 10 but your guess inside the box down');
 // random value generated
-var y = Math.floor(Math.random() * 10 + 1);
+let y = Math.floor(Math.random() * 10 + 1);
       
 // counting the number of guesses
 // made for correct Guess
-var guess = 1;
+let guess = 1;
   
 document.getElementById("submitguess").onclick = function(){
   
 // number guessed by user     
-var x = document.getElementById("guessField").value;
+let x = document.getElementById("guessField").value;
 
 if(x == y)
 {    
@@ -111,11 +111,11 @@ else if(x > y) /* if guessed number is greater
                than actual number*/ 
 {    
    guess++;
-   alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+   alert("OOPS SORRY!! TRY LOW NUMBER");
 }
 else
 {
    guess++;
-   alert("OOPS SORRY!! TRY A GREATER NUMBER")
+   alert("OOPS SORRY!! TRY HIGH NUMBER")
 }
 }
