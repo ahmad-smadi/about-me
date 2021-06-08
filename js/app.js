@@ -1,52 +1,121 @@
 'use strict'
-
+let correctAnswer = 0;
 let userName = prompt('waht is your name');
- console.log(userName);
- alert(`hello ${userName}, to my own webpage `);
+console.log(userName);
+alert(`hello ${userName}, to my own webpage `);
 
 
- let like = prompt('do you think i like coding').toLowerCase;
- if(like === 'yes' || 'y'){
-     console.log(like);
-     alert('awsome');
- } else if (like === 'no' || 'n'){
-     alert('bad');
- } else ('please choose your answer between yes, y , no and n');
+let like = prompt('do you think i like coding ?').toLowerCase();
+if (like === 'yes' || like === 'y') {
+    console.log('correct');
+    alert('you are correct')
+}
+else if (like === 'no' || like === 'n') {
+       
+    alert('uncorrect')
+} else {
+    alert('please chose between yes or y or no or n');
+}
+correctAnswer++;
 
- let cat = prompt('do you think i like cat ?').toLowerCase;
- if(cat === 'yes' || 'y'){
-     
-     alert('Great !');
- } else if (cat === 'no' || 'n'){
-    console.log(cat);
-     alert('unluky you are');
- } else ('please choose your answer between yes, y , no and n');
-
- 
- let car = prompt('do you think i like car ?').toLowerCase;
- if(cat === 'yes' || 'y'){
-     console.log(car);
-     alert('amazing ');
- } else if (car === 'no' || 'n'){
-     alert('unluky you are');
- } else ('please choose your answer between yes, y , no and n');
-
- let coffe = prompt('do you think i like coffe ?').toLowerCase;
- if(cat === 'yes' || 'y'){
-     console.log(coffe);
-     alert('Great ');
- } else if (coffe === 'no' || 'n'){
-     alert('sure no');
- } else ('please choose your answer between yes, y , no and n');
+let cat = prompt('do you think i like cat ?').toLowerCase();
+if (cat === 'yes' || cat === 'y') {
+    
+    alert('uncorrect')
+} else if (cat === 'no' || cat === 'n'){
+    console.log('you are not correct');
+alert('correct')
+} else {
+    alert('please chose between yes or y or no or n')
+}
+correctAnswer++;
 
 
- let mansaf = prompt('do you think i like mansaf ?').toLowerCase;
- if(cat === 'yes' || 'y'){
-     console.log(mansaf);
-     alert('good job');
- } else if (mansaf === 'no' || 'n'){
-     alert('think again');
- } else ('please choose your answer between yes, y , no and n');
+let car = prompt('do you think i like car ?').toLowerCase();
+if (car === 'yes' || car === 'y') {
+    console.log(' correct')
+    alert(' correct')
+} else if (car === 'no' || car === 'n') {
+    alert('uncorrect')
+} else {
+    alert('please chose between yes or y or no or n')
+}
+correctAnswer++;
+
+let coffe = prompt('do you think i like coffe ?').toLowerCase();
+if (coffe === 'yes' || coffe === 'y') {
+    console.log('correct');
+    alert('correct')
+} else if (coffe === 'no' || coffe === 'n') {
+    alert('uncorrect');
+} else {
+    alert('please chose between yes or y or no or n')
+}
+correctAnswer++;
 
 
- alert(`thanks back again ${userName}`)
+let mansaf = prompt('do you think i like mansaf ?').toLowerCase();
+if (mansaf === 'yes' || mansaf === 'y') {
+    console.log('correct')
+    alert('correct')
+} else if (mansaf === 'no' || mansaf === 'n') {
+    alert('uncorrect');
+} else {
+    alert('please chose between yes or y or no or n');
+}
+correctAnswer++;
+let smocker = prompt('do you think im a smocker person ?').toLowerCase();
+if (smocker === 'yes' || smocker === 'y') {
+    console.log('correct');
+    alert('correct');
+} else if (smocker === 'no' || smocker === 'n') {
+    alert('uncorrect');
+} else {
+    alert('please chose between yes or y or no or n');
+}
+
+correctAnswer++;
+
+let student = prompt('do you think im a student ?').toLowerCase();
+if (student === 'yes' || student === 'y') {
+    console.log(' correct');
+    alert(' correct');
+} else if (student === 'no' || student === 'n') {
+    alert(' uncorrect');
+} else {
+    alert('please chose between yes or y or no or n');
+}
+correctAnswer++;
+
+alert (`your scored ${correctAnswer} out of 7`);
+
+
+// random value generated
+var y = Math.floor(Math.random() * 10 + 1);
+      
+// counting the number of guesses
+// made for correct Guess
+var guess = 1;
+  
+document.getElementById("submitguess").onclick = function(){
+  
+// number guessed by user     
+var x = document.getElementById("guessField").value;
+
+if(x == y)
+{    
+   alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+           + guess + " GUESS ");
+}
+else if(x > y) /* if guessed number is greater
+               than actual number*/ 
+{    
+   guess++;
+   alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+}
+else
+{
+   guess++;
+   alert("OOPS SORRY!! TRY A GREATER NUMBER")
+}
+}

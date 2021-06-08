@@ -38,3 +38,28 @@ footer {
     background-color: black;
     color: white;
 }
+main section:nth-child(2) ul {
+    display: list-item;
+    padding: 10px;
+    list-style: square;
+}
+main section:nth-child(3) ol {
+    display: list-item;
+    padding: 10px;
+    margin: 10px;
+    border: brown;
+}
+main section:nth-child(3) h2 {
+    font-size: 30px;
+    padding: 5px;
+}
+
+main section:nth-child(2) h2 {
+    font-size: 30px;
+    padding: 5px;
+    margin: 20px;
+}
+main section:nth-child(2) ul {
+    display: list-item;
+    list-style: symbols(-);
+}
