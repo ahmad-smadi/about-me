@@ -1,8 +1,8 @@
 'use strict'
-let correctAnswer = 0;
-let userName = prompt('waht is your name');
-console.log(userName);
-alert(`hello ${userName}, to my own webpage `);
+// let correctAnswer = 0;
+// let userName = prompt('waht is your name');
+// //console.log(userName);
+// alert(`hello ${userName}, to my own webpage `);
 
 
 // let like = prompt('do you think i like coding ?').toLowerCase();
@@ -64,14 +64,18 @@ alert(`hello ${userName}, to my own webpage `);
 //     alert('please chose between yes or y or no or n');
 // }
 // correctAnswer++;
-// let smocker = prompt('do you think im a smocker person ?').toLowerCase();
-// if (smocker === 'yes' || smocker === 'y') {
+//  let lucky=0 ;
+//  for(let i=0;i<4;i++){
+//     lucky=prompt('guess my lucky number');
+//     lucky=parseInt(lucky);
+//  if (lucky ===3) {
 //     console.log('correct');
 //     alert('correct');
-// } else if (smocker === 'no' || smocker === 'n') {
-//     alert('uncorrect');
-// } else {
-//     alert('please chose between yes or y or no or n');
+//     break;
+//  } else if ( lucky>3 ) {
+//      alert('too high');
+// } else 
+//      alert('too low');
 // }
 
 // correctAnswer++;
@@ -135,3 +139,31 @@ function piar(qustion,goodJob ,tryAgin) {
     piar('do you think i like car ?','you are right','wrong')
     piar('do you think i like coffe ?','you are right','wrong')
     piar('do you think i like mansaf ?','you are right','wrong')
+    function qustion6(answer,right,wrong){
+        let userInput;
+        do{
+            userInput=prompt(answer)
+
+        }
+        while(userInput !=='yes'&&userInput!=='y'&& userInput!=='no'&& userInput!=='n');
+        if (userInput==='yes'||userInput==='y'){
+            console.log(right)
+        } else{
+            console.log(wrong)}
+            }
+    qustion6('do you think my lucky number is  3 ','correct','uncorrect')
+
+    function qustion7(answer,right,wrong){
+        let userInput;
+        do{
+            userInput=prompt(answer)
+
+        }
+        while(userInput !=='yes'&&userInput!=='y'&& userInput!=='no'&& userInput!=='n');
+        if (userInput==='yes'||userInput==='y'){
+            console.log(right)
+            correctAnswer++
+        } else{
+            console.log(wrong)}
+            }
+    qustion7('do you think im a student ?','correct','uncorrect')
