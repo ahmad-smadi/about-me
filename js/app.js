@@ -80,49 +80,24 @@
 
 // correctAnswer++;
 
-// let student = prompt('do you think im a student ?').toLowerCase();
-// if (student === 'yes' || student === 'y') {
-//     console.log(' correct');
-//     alert(' correct');
-// } else if (student === 'no' || student === 'n') {
-//     alert(' uncorrect');
-// } else {
-//     alert('please chose between yes or y or no or n');
-// }
-// correctAnswer++;
-
-// alert (`your scored ${correctAnswer} out of 7`);
-
-// alert('i have a game for you chose number between 0 and 10 but your guess inside the box down');
-// // random value generated
-// let y = Math.floor(Math.random() * 10 + 1);
-      
-// // counting the number of guesses
-// // made for correct Guess
-// let guess = 1;
   
-// document.getElementById("submitguess").onclick = function(){
-  
-// // number guessed by user     
-// let x = document.getElementById("guessField").value;
+  let guessNumber =  prompt('im thinking in number between 0 and 10 guess what is it')
+  for(let i=0; i < 6 ; i++ ) {
+      if ( i === 3){
+          alert('correct');
+          break;
+      } else if ( guessNumber > 3  ) {
+          alert('too high');
+      } else {
+          alert('too low')
+      }
+  }
 
-// if(x == y)
-// {    
-//    alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
-//            + guess + " GUESS ");
-// }
-// else if(x > y) /* if guessed number is greater
-//                than actual number*/ 
-// {    
-//    guess++;
-//    alert("OOPS SORRY!! TRY LOW NUMBER");
-// }
-// else
-// {
-//    guess++;
-//    alert("OOPS SORRY!! TRY HIGH NUMBER")
-// }
-// }
+  correctAnswer++;
+
+ alert (`your scored ${correctAnswer} out of 7`);
+
+
 function piar(qustion,goodJob ,tryAgin) {
     let userInput;
     do {
