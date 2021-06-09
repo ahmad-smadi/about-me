@@ -1,8 +1,8 @@
 'use strict'
-// let correctAnswer = 0;
-// let userName = prompt('waht is your name');
-// //console.log(userName);
-// alert(`hello ${userName}, to my own webpage `);
+ let correctAnswer = 0;
+ let userName = prompt('waht is your name');
+ console.log(userName);
+ alert(`hello ${userName}, to my own webpage `);
 
 
 // let like = prompt('do you think i like coding ?').toLowerCase();
@@ -81,8 +81,9 @@
 // correctAnswer++;
 
   
-  let guessNumber =  prompt('im thinking in number between 0 and 10 guess what is it')
+  
   for(let i=0; i < 6 ; i++ ) {
+    let guessNumber =  prompt('im thinking in number between 0 and 10 guess what is it')
       if ( i === 3){
           alert('correct');
           break;
