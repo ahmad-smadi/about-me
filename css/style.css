@@ -1,12 +1,16 @@
 body {
-    background-color: #ffed99;
+    background-color: #ffeedb;
 }
-
+body header {
+    background-color: #0a1d37;
+    width: 10px;
+}
 header img {
     width: 100px;
 }
 header nav {
     float: right;
+    color: #f7fd04;
 }
 
 header nav ul {
@@ -17,6 +21,8 @@ header nav ul li {
     float: right;
     padding: 12px;
     margin: 12px;
+    border: red;
+    position: sticky;
 }
 
 main img {
